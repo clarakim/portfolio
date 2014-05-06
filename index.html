@@ -1,0 +1,422 @@
+	
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>Clara Porfolio website</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage.js using CSS3 transformations." />
+	<meta name="keywords"  content="fullpage,jquery,anchor,links,inside,demo,css,css3" />
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+	<!--Modernizr-->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+	<!--google-font-->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	
+	<!--font awesome-->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+	<!--foundation-->
+	<link rel="stylesheet" type="text/css" href="asset/css/foundation.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/main.css" />
+
+	<!--Grid gallery-->
+
+	<link rel="stylesheet" type="text/css" href="asset/css/component.css">
+	<!--slicknav css-->
+	<link rel="stylesheet" href="asset/css/style.css">
+	<link rel="stylesheet" href="asset/css/slicknav.css">
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+	<script type="text/javascript" src="examples.js"></script>
+
+	<!--foundation-->
+	
+
+</head>
+
+
+<body>
+
+<div class="container">
+	<div id="clouds">
+		<div class="cloud x1"></div>
+		<!-- Time for multiple clouds to dance around -->
+		<div class="cloud x2"></div>
+		<div class="cloud x3"></div>
+		<div class="cloud x4"></div>
+		<div class="cloud x5"></div>
+	</div>
+
+<!--header navbar-->
+	
+	<div class="header table">
+
+			
+		<ul class="menu hide-for-small">
+			<div class="row">
+				<div class="large-12 columns">				
+				<li class="left"><a href="#landing"><img class="navlogo" src="asset/imgs/logo.png"></a></li>
+				<li class="rightmenu"><a href="#about">ABOUT</a></li>				
+				<li class="rightmenu"><a href="#work">WORK</a></li>
+				<li class="rightmenu"><a href="#contact">CONTACT</a></li>				
+				</div>
+			</div>
+		</ul>
+
+		<div class="smallnav show-for-small hide-for-medium-up">
+		<a href="#landing"><img class="navlogo small" src="asset/imgs/logo.png"></a>
+		<ul id="menu">			
+			<li><a href="#landing"><div>home</div></a></li>
+			<li><a href="#about"><div>about</div></a></li>
+			<li><a href="#work"><div>work</div></a></li>
+			<li><a href="#contact"><div>contact</a></div></li>
+		</ul>
+		</div>
+		
+	</div>
+
+	<div class="contents">
+	<div class="row">
+		<section id="landing" height="100vh">
+			<div class="wrap center">
+				<h1>Hello, this is Clara</h1>
+				<h2 class="text-center">I design and develop front-end.</h2>
+			</div>
+		</section>
+	</div>
+
+
+	<div class="row ">
+
+
+	<div class="row">
+		<section id="about">
+			<div class="wrap wrap2">
+				<h1>About</h1>
+
+				<div id="slidr-div" style="display: block">
+					<div class="text">
+						<p>
+							Hello there! My name Clara and I want to be a front-end designer/developer.
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+					<div class="text text-center">
+						<p>
+							SKILLS
+						</p>
+						<i class="fa fa-html5 fa-5x"></i>
+						<i class="fa fa-css3 fa-5x"></i>
+
+					</div>
+				</div>
+
+
+			</div>	
+		</section>
+	</div>
+			
+	<div class="row">
+		<section id="work">
+			<div class="grid wrap2">
+			<h1>Work</h1>
+			
+
+
+			    <div class="large-12 columns">
+			        <div id="grid-gallery" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid">
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						<li>
+							<figure>
+								<img src="asset/imgs/thumbnail/blackestate.jpg" alt="img01"/>
+								<figcaption><h3>Black-estate</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="asset/imgs/thumbnail/hellogarden.jpg" alt="img01"/>
+								<figcaption><h3>Hello Garden</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="asset/imgs/thumbnail/peaceband.jpg" alt="img01"/>
+								<figcaption><h3>Peace Band</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="asset/imgs/thumbnail/recipe-website.jpg" alt="img01"/>
+								<figcaption><h3>Recipe website 1</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="asset/imgs/thumbnail/recipe-website-build.jpg" alt="img01"/>
+								<figcaption><h3>Recipe website 2</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="asset/imgs/thumbnail/flappy-angry-bird.jpg" alt="img01"/>
+								<figcaption><h3>Flappy bird</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="asset/imgs/thumbnail/yoobee-landing-page.jpg" alt="img01"/>
+								<figcaption><h3>Yoobee Campaign</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="asset/imgs/thumbnail/portfolio.jpg"  alt="img01"/>
+								<figcaption><h3>Beach website</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="asset/imgs/thumbnail/portfolio.jpg" alt="img01"/>
+								<figcaption><h3>Portfolio</h3></figcaption>
+							</figure>
+						</li>
+
+					
+						
+						
+					</ul>
+				</section><!-- // grid-wrap -->
+				<section class="slideshow">
+					<ul>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Letterpress asymmetrical</h3>
+									<p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+								</figcaption>
+								<img src="img/large/1.png" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Vice velit chia</h3>
+									<p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over. Occupy wolf selvage bespoke tattooed, cred sustainable Odd Future hashtag butcher.</p>
+								</figcaption>
+								<img src="img/large/2.png" alt="img02"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Brunch semiotics</h3>
+									<p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
+								</figcaption>
+								<img src="img/large/3.png" alt="img03"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Chillwave nihil occupy</h3>
+									<p>Vice cliche locavore mumblecore vegan wayfarers asymmetrical letterpress hoodie mustache. Shabby chic lomo polaroid, scenester 8-bit Portland Pitchfork VHS tote bag.</p>
+								</figcaption>
+								<img src="img/large/4.png" alt="img04"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Kale chips lomo biodiesel</h3>
+									<p>Chambray Schlitz pug YOLO, PBR Tumblr semiotics. Flexitarian YOLO ennui Blue Bottle, forage dreamcatcher chillwave put a bird on it craft beer Etsy.</p>
+								</figcaption>
+								<img src="img/large/5.png" alt="img05"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Exercitation occaecat</h3>
+									<p>Cosby sweater hella lomo Thundercats VHS occupy High Life. Synth pop-up readymade single-origin coffee, fanny pack tousled retro. Fingerstache mlkshk ugh hashtag, church-key ethnic street art pug yr.</p>
+								</figcaption>
+								<img src="img/large/6.png" alt="img06"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Selfies viral four</h3>
+									<p>Ethnic readymade pug, small batch XOXO Odd Future normcore kogi food truck craft beer single-origin coffee banh mi photo booth raw denim. XOXO messenger bag pug VHS. Forage gluten-free polaroid, twee hoodie chillwave Helvetica.</p>
+								</figcaption>
+								<img src="img/large/1.png" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Photo booth skateboard</h3>
+									<p>Thundercats pour-over four loko skateboard Brooklyn, Etsy sriracha leggings dreamcatcher narwhal authentic 3 wolf moon synth Portland. Shabby chic photo booth Blue Bottle keffiyeh, McSweeney's roof party Carles.</p>
+								</figcaption>
+								<img src="img/large/2.png" alt="img02"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Ex fashion axe</h3>
+									<p>Ennui Blue Bottle shabby chic, organic butcher High Life tattooed meggings jean shorts Brooklyn sartorial polaroid. Cray raw denim +1, bespoke High Life Odd Future banh mi chillwave Marfa kogi disrupt paleo direct trade 90's Godard. </p>
+								</figcaption>
+								<img src="img/large/3.png" alt="img03"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Thundercats next level</h3>
+									<p>Typewriter authentic PBR, iPhone mixtape fixie post-ironic fingerstache Pitchfork artisan. Wayfarers master cleanse occupy, Tonx lo-fi swag Truffaut irony whatever Blue Bottle readymade PBR gluten-free. Lomo Pinterest Banksy fap. Retro ennui you probably haven't heard of them iPhone, PBR fashion axe polaroid.</p>
+								</figcaption>
+								<img src="img/large/4.png" alt="img04"/>
+							</figure>
+						</li>
+						
+											
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">Navigate with arrow keys</div>
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+			    </div>
+		    </div>
+
+
+		</section>
+	</div>
+
+			
+		<section id="contact">
+
+
+			<div class="row">
+			
+				<div class="content wrap2">
+					<h1>Contact</h1>
+					<p>Make contacts with me!</p>
+					<a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
+					<a href="#"><i class="fa fa-github fa-3x"></i></a>
+
+					<div class="row">
+
+          <div class="large-12 columns">
+
+              <form role="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="contactform">
+                <fieldset>
+                  
+
+                 <!-- <?php if(isset($hasError)) { //If errors are found ?>
+                    <p class="alert alert-danger">Please check if you've filled all the fields with valid information and try again. Thank you.</p>
+                  <?php } ?>
+
+                  <?php if(isset($emailSent) && $emailSent == true) { //If email is sent ?>
+                    <div class="alert alert-success">
+                      <p><strong>Message Successfully Sent!</strong></p>
+                      <p>Thank you for using our contact form, <strong><?php echo $name;?></strong>! Your email was successfully sent and we&rsquo;ll be in touch with you soon.</p>
+                    </div>
+                  <?php } ?>
+                -->
+									<div class="large-6 columns">
+	                  <div class="form-group">
+	                    <label for="name">Your Name<span class="help-required">*</span></label>
+	                    <input type="text" name="contactname" id="contactname" value="" class="form-control required" role="input" aria-required="true" />
+	                  </div>
+
+	                  <div class="form-group">
+	                    <label for="email">Your Email<span class="help-required">*</span></label>
+	                    <input type="text" name="email" id="email" value="" class="form-control required email" role="input" aria-required="true" />
+	                  </div>
+	                </div> 
+
+
+									<div class="large-6 columns">
+	                  <div class="form-group">
+	                    <label for="message">Message<span class="help-required">*</span></label>
+	                    <textarea rows="8" name="message" id="message" class="form-control required" role="textbox" aria-required="true"></textarea>
+	                  </div>
+
+	                  <div class="actions">
+	                    <input type="submit" value="Send Your Message" name="submit" id="submitButton" class="btn btn-primary" title="Click here to submit your message!" />
+	                  <!--  <input type="reset" value="Clear Form" class="btn btn-danger" title="Remove all the data from the form." />   -->
+	                  </div>
+                	</div>
+                </fieldset>
+              </form>
+        	</div>
+      	</div>
+
+				</div>
+		</section>
+	</div>	
+		<img class="landscape hide-for-small" src="asset/imgs/landscape.png" alt="auckland landscape">
+		<img class="bgg-small show-for-small" src="asset/imgs/landscape.png" alt="auckland landscape">
+	</div>
+	<script src="asset/js/imagesloaded.pkgd.min.js"></script>
+	<script src="asset/js/masonry.pkgd.min.js"></script>
+	<script src="asset/js/classie.js"></script>
+	<script src="asset/js/cbpGridGallery.js"></script>
+	<script>
+    new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+	</script>
+	<script src="asset/js/jquery.slicknav.js"></script>
+	<script>
+		$(function(){
+			$('#menu').slicknav({label:"",'closeOnClick': true});
+		});
+	</script>
+
+	<script src="asset/js/slidr.min.js"></script>
+	<script>
+	$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+	</script>
+
+	</body>
+
+	</html>
