@@ -25,7 +25,7 @@ strong{
 ol,ul {
     list-style: none;
     margin:0;
-    padding:0;
+    padding:0px;
 }
 caption,th {
     text-align: left;
@@ -66,7 +66,8 @@ body{
 	padding-bottom: 70px;
 	min-width: 100%; 
 	position: relative;
-	background-color: #3498DB;
+	/*background-color:  #3498DB; */
+	background-color: #4fa6f2;
 	z-index: -50px; /*positioned at back*/
 
 	/*To hide the horizontal scroller appearing during the animation*/
@@ -97,9 +98,11 @@ section{
     vertical-align: middle;    
 }
 
+ul.menu {padding-bottom:15px;}
+
 .wrap2 {
 	margin-top: 100px;
-	padding-top: 220px;
+	padding-top: 100px;
 	padding: 3%;
 }
 
@@ -151,6 +154,7 @@ h1{
 	font-size: 2.7em;	
 	color: #fff;
 	text-transform: uppercase;
+	letter-spacing:3px;
 	
 }
 
@@ -163,8 +167,8 @@ h2, h4{
 	font-size:1.6em;
 	color: #444;
 	text-transform: uppercase;
+	letter-spacing:2px
 }
-
 
 
 p{
@@ -224,7 +228,7 @@ ul.menu {
     margin-bottom: 18px;
     text-align:right;
     z-index: 100;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.8);
 
 }
 
@@ -237,13 +241,22 @@ ul.menu .rightmenu {
 ul.menu li a {
 	display:inline-block;
 	padding-top: 30px;
-    padding-left:8px;
-    padding-right:6px;
-    font-family: 'Oswald'
+  padding-left:8px;
+  padding-right:6px;
+  font-family: 'Abel', sans-serif;
+  letter-spacing:1px;
+
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
 }
 
 ul.menu .rightmenu:hover {
 	background-color: lightblue;
+
 }
 
 ul.menu .rightmenu:hover a{
@@ -289,7 +302,7 @@ ul.menu a {
 
 #landing {
 	width: 100%;
-	height:100vh;
+	min-height:100vh;
 	position:relative;
 	background: rgba(0,0,0,0);
 	margin: auto;
@@ -301,12 +314,13 @@ ul.menu a {
 }
 
 #work {
+	padding-top: 80px;
 	position: relative;
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(255,255,255,0);
 }
 
 #contact {
-	height:100vh;
+	min-height: 100vh;
 	position: relative;
 	background-color: grey;
 }
@@ -348,7 +362,9 @@ ul.menu a {
 	display: visible;
 }
 
-
+#jsicon {
+	width: 80px;
+}
 
 
 img.landscape {
@@ -460,9 +476,9 @@ img.sun {
 
 .x1 {
 	left: 250px;
-	-webkit-transform: scale(0.8);
-	-moz-transform: scale(0.8);
-	transform: scale(0.8);
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
 	-webkit-animation: moveclouds 58s linear infinite;
 	-moz-animation: moveclouds 58s linear infinite;
 	-o-animation: moveclouds 58s linear infinite;
@@ -474,9 +490,9 @@ img.sun {
 	
 	left: -250px; top: -50px;
 	
-	-webkit-transform: scale(0.6);
-	-moz-transform: scale(0.6);
-	transform: scale(0.6);
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
 	opacity: 0.5; /*opacity proportional to the size*/
 	
 	/*Speed will also be proportional to the size and opacity*/
@@ -490,9 +506,9 @@ img.sun {
 .x3 {
 	left: -250px; top: -30px;
 	
-	-webkit-transform: scale(0.9);
-	-moz-transform: scale(0.9);
-	transform: scale(0.9);
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
 	opacity: 0.55; /*opacity proportional to the size*/
 	
 	-webkit-animation: moveclouds 100s linear infinite;
@@ -503,9 +519,9 @@ img.sun {
 .x4 {
 	left: 470px; top: -650px;
 	
-	-webkit-transform: scale(0.75);
-	-moz-transform: scale(0.75);
-	transform: scale(0.75);
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
 	opacity: 0.6; /*opacity proportional to the size*/
 	
 	-webkit-animation: moveclouds 40s linear infinite;

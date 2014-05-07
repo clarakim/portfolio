@@ -22,7 +22,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+ 
   <link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
@@ -31,6 +31,7 @@
 
 	
 	<!--font awesome-->
+	<link rel="stylesheet" href="asset/css/">
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 	<!--foundation-->
@@ -94,7 +95,7 @@
 		</ul>
 
 		<div class="smallnav show-for-small hide-for-medium-up">
-		<a href="#landing"><img class="navlogo small" src="asset/imgs/logo.png"></a>
+		<div id="logo"><a href="#landing"><img class="navlogo small" src="asset/imgs/logo.png"></a></div>
 		<ul id="menu">			
 			<li><a href="#landing">HOME</a></li>
 			<li><a href="#about">ABOUT</a></li>
@@ -130,23 +131,33 @@
 			<div class="wrap2">
 				<h1>About</h1>
 
-				<ul class="bxslider">
+				<ul class="bxlider">
 					<li class="text">
 						<p>
 							Hello there! My name Clara and I want to be a front-end designer/developer.
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							I have a degree in Architecture so I have a design background. Duis aute irure dolor in reprehenderit in voluptate velit esse
 							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 							proident.
 						</p>
 					</li>
-					<li class="text text-center">
-						<p>
+					<li class="text">
+						<p class="text-center">
 							SKILLS
 						</p>
-						<i class="fa fa-html5 fa-5x"></i>
-						<i class="fa fa-css3 fa-5x"></i>
-
+						<div class="row">
+							<div class="small-6 columns">
+								<i class="fa fa-html5 fa-5x"></i><p>HTML5</p>
+							</div>
+							<div class="small-6 columns">	
+								<i class="fa fa-css3 fa-5x"></i><p>CSS3</p>
+							</div>
+							<div class="small-6 columns">
+							  <img id="jsicon" src="asset/imgs/js2.png"><p>Javascipt</p>
+							</div>
+							<div class="small-6 columns">
+							  <i class="fa fa-mobile fa-5x"></i><p>Responsive</p>
+							</div>									
+						</div>
 					</div>
 				</li>
 
@@ -172,7 +183,7 @@
 						<li class="t-border">
 							<figure>
 								<div class="tbr">
-								<img src="asset/imgs/thumbnail/blackestate.jpg" alt="Black-estate"/>
+								<img src="asset/imgs/thumbnail/blackestate.png" alt="Black-estate"/>
 								<figcaption><h3>Black-estate</h3></figcaption>
 							</div>
 							</figure>
@@ -182,13 +193,14 @@
 								<div class="tbr">
 								<img src="asset/imgs/thumbnail/hellogarden.jpg" alt="hello-garden"/>
 								<figcaption><h3>Hello Garden</h3></figcaption>
+								<div class="whitehover"></div>
 							</div>
 							</figure>
 						</li>
 						<li class="t-border">
 							<figure>
 								<div class="tbr">
-								<img src="asset/imgs/thumbnail/peaceband.jpg" alt="Peace band"/>
+								<img src="asset/imgs/thumbnail/peaceband.png" alt="Peace band"/>
 								<figcaption><h3>Peace Band</h3></figcaption>
 							</div>
 							</figure>
@@ -220,7 +232,7 @@
 						<li class="t-border">
 							<figure>
 								<div class="tbr">
-								<img src="asset/imgs/thumbnail/yoobee-landing-page.jpg" alt="yoobee landing page"/>
+								<img src="asset/imgs/thumbnail/yoobee.png" alt="yoobee landing page"/>
 								<figcaption><h3>Yoobee Campaign</h3></figcaption>
 							</div>
 							</figure>
@@ -236,7 +248,7 @@
 						<li class="t-border">
 							<figure>
 								<div class="tbr">
-								<img src="asset/imgs/thumbnail/portfolio.jpg" alt="portfolio"/>
+								<img src="asset/imgs/thumbnail/portfolio.png" alt="portfolio"/>
 								<figcaption><h3>Portfolio</h3></figcaption>
 							</div>
 							</figure>
@@ -257,7 +269,7 @@
 </p>
 									<a href="http://clarakim.github.io/black-estate" target="_blank">VIEW WEBSITE</a>
 								</figcaption>
-								<img src="asset/imgs/thumbnail/blackestate.jpg" alt="Black-estate"/>
+								<img src="asset/imgs/blackestate.png" alt="Black-estate"/>
 							</figure>
 						</li>
 						<li>
@@ -295,6 +307,7 @@
 								<figcaption>
 									<h3>Recipe website 2</h3>
 									<p>Ennui Blue Bottle shabby chic, organic butcher High Life tattooed meggings jean shorts Brooklyn sartorial polaroid. Cray raw denim +1, bespoke High Life Odd Future banh mi chillwave Marfa kogi disrupt paleo direct trade 90's Godard. </p>
+									<a href="http://clarakim.github.io/black-estate" target="_blank">VIEW WEBSITE</a>
 								</figcaption>
 								<img src="img/large/3.png" alt="img03" target="_blank"/>
 							</figure>
@@ -304,6 +317,7 @@
 								<figcaption>
 									<h3>Flappy Angrybird</h3>
 									<p>Chambray Schlitz pug YOLO, PBR Tumblr semiotics. Flexitarian YOLO ennui Blue Bottle, forage dreamcatcher chillwave put a bird on it craft beer Etsy.</p>
+									<a href="http://clarakim.github.io/black-estate" target="_blank">VIEW WEBSITE</a>
 								</figcaption>
 								<img src="img/large/5.png" alt="img05" target="_blank"/>
 							</figure>
@@ -313,6 +327,7 @@
 								<figcaption>
 									<h3>Yoobee Campaign</h3>
 									<p>Cosby sweater hella lomo Thundercats VHS occupy High Life. Synth pop-up readymade single-origin coffee, fanny pack tousled retro. Fingerstache mlkshk ugh hashtag, church-key ethnic street art pug yr.</p>
+									<a href="http://clarakim.github.io/black-estate" target="_blank">VIEW WEBSITE</a>
 								</figcaption>
 								<img src="img/large/6.png" alt="img06" target="_blank"/>
 							</figure>
@@ -322,6 +337,7 @@
 								<figcaption>
 									<h3>Beach Website</h3>
 									<p>Ethnic readymade pug, small batch XOXO Odd Future normcore kogi food truck craft beer single-origin coffee banh mi photo booth raw denim. XOXO messenger bag pug VHS. Forage gluten-free polaroid, twee hoodie chillwave Helvetica.</p>
+									<a href="http://clarakim.github.io/black-estate" target="_blank">VIEW WEBSITE</a>
 								</figcaption>
 								<img src="img/large/1.png" alt="img01" target="_blank"/>
 							</figure>
@@ -331,8 +347,9 @@
 								<figcaption>
 									<h3>Portfolio</h3>
 									<p>This is a portfolio website using template from Bootstrap.</p>
+									<a href="http://clara.kim.yoobee.net.nz/clara/" target="_blank">VIEW WEBSITE</a>
 								</figcaption>
-								<img src="img/large/2.png" alt="img02" target="_blank"/>
+								<img src="asset/imgs/portfolio.png" alt="img02" target="_blank"/>
 							</figure>
 						</li>											
 					</ul>
@@ -416,8 +433,8 @@
 				</div>
 		</section>
 	
-		<img class="landscape hide-for-small" src="asset/imgs/landscape.png" alt="auckland landscape">
-		<img class="bgg-small show-for-small" src="asset/imgs/landscape.png" alt="auckland landscape">
+		<img class="landscape hide-for-small" src="asset/imgs/landscape-blue.png" alt="auckland landscape">
+		<img class="bgg-small show-for-small" src="asset/imgs/landscape-blue-mobile.png" alt="auckland landscape">
 	</div>
 	<script src="asset/js/imagesloaded.pkgd.min.js"></script>
 	<script src="asset/js/masonry.pkgd.min.js"></script>
