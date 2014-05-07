@@ -32,7 +32,7 @@ caption,th {
 
 }
 * {
-	font-family: 'Monserret', sans-serif;
+	font-family: 'Abel', sans-serif;
     font-weight: 700;
     font-size: 100%;
     margin:0;
@@ -49,7 +49,7 @@ abbr,acronym { border: 0;
 /* Custom CSS
  * --------------------------------------- */
 html,body {
-	height: 100%;
+	
 }
 
 body{
@@ -60,34 +60,47 @@ body{
 	-o-font-smoothing: antialiased;
 	
 
-	font-family: 'Monserret', sans-serif;
+	font-family: 'Abel', sans-serif;
 	color: #333;
 	color: rgba(0,0,0,0.5);
 	padding-bottom: 70px;
-	width: 100%; 
+	min-width: 100%; 
 	position: relative;
 	background-color: #3498DB;
 	z-index: -50px; /*positioned at back*/
 
 	/*To hide the horizontal scroller appearing during the animation*/
-	overflow: auto; 
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
+
+section{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
 
 .container .fullpage {
 	margin-top: 150px;
 	height: 100%;
 	margin-bottom: 0;
 	position: relative;
+
 	width: 100%;
 }
 
 .wrap{
 	padding-top: 0px;
 	display: table-cell;
+	padding-left:20px;
+	padding-right: 20px;
     vertical-align: middle;    
 }
 
-.wrap2 {padding-top: 150px;
+.wrap2 {
+	margin-top: 100px;
+	padding-top: 220px;
+	padding: 3%;
 }
 
 /*spaces between texts*/
@@ -96,30 +109,83 @@ body{
 	padding: 30px 50px 30px 50px; 
 }
 
+ /*clearfix hack*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+/*====fonts====*/
 
-h1{
-	font-family: 'Oswald' , helvetica;
-	font-size: 3.5em;	
-	color: #fff;
+section h1
+{
+	display: table;
+  margin: auto;
+	border-bottom:1px solid;
+	padding-bottom:1px;
+	padding-left:20px;
+	padding-right:20px; 
 	
 }
 
-h2{
-	font-family: 'Monserret', helvetica;
+section h4 {
+	
+}
+
+#landing a {
+	margin-top: 20px; 
+	color: white;
+	display: block;
+  margin: auto;
+	border:2px solid;
+	padding-bottom:2px;
+	padding-left:10px;
+	padding-right:10px; 
+}
+
+
+h1{
+
+	font-family: 'Oswald' , helvetica;
+	font-size: 2.7em;	
+	color: #fff;
+	text-transform: uppercase;
+	
+}
+
+#work h1 {
+	color:#444;
+} 
+
+h2, h4{
+	font-family: 'Abel', sans-serif;
 	font-size:1.6em;
 	color: #444;
+	text-transform: uppercase;
 }
+
+
 
 p{
 	font-size: 1.2em;
 }
 
-#work h3{
+.grid-wrap h3{
 	font-size: 0.8em;
 	color:#444;
+	text-transform: uppercase;
 }
 
+/*Light box slideshow fontsize*/
+.slideshow h3 {
+	font-size: 1em;
+}
+
+
+.slideshow p {
+	font-size: 0.9em;
+}
 
 
 /*header*/
@@ -142,18 +208,24 @@ p{
 }
 
 .small {
-	position: absolute;
+	position: fixed;
 	top:7px;
 	left: 4px;
 	z-index: 90;
 }
 
 ul.menu {
-
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
     list-style:none;
     margin:0; 
     margin-bottom: 18px;
     text-align:right;
+    z-index: 100;
+    background-color: rgba(255,255,255,0.3);
+
 }
 
 ul.menu .rightmenu {
@@ -178,12 +250,17 @@ ul.menu .rightmenu:hover a{
 	color:#fff;
 	}
 
+
 #landing {
 	margin-top: 150px;
 }
 
 ul.menu .rightmenu a:active {
 	color:black;
+}
+
+ul.menu a {
+	color:grey;
 }
 
 
@@ -196,9 +273,19 @@ ul.menu .rightmenu a:active {
 
 }
 
+
+.headerspace {
+	background-color: white;
+	width: 100%;
+	height:91px;
+}
+
 .contents h1, .contents h3 {
 	text-align: center;
 }
+
+
+
 
 #landing {
 	width: 100%;
@@ -215,11 +302,13 @@ ul.menu .rightmenu a:active {
 
 #work {
 	position: relative;
+	background-color: rgba(255,255,255,0.7);
 }
 
 #contact {
 	height:100vh;
 	position: relative;
+	background-color: grey;
 }
 
 /*contents divs ends*/
@@ -235,6 +324,31 @@ ul.menu .rightmenu a:active {
 .section{
 	text-align:center;
 }
+
+/*work section*/
+
+
+
+.tbr{
+	background-color: #eee;
+	border: 1px solid #ccc;
+	padding: 5px;
+	position: relative;
+}
+
+.t-border figcaption {
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 120;
+}
+
+.tbr:hover figcaption{
+	display: visible;
+}
+
+
 
 
 img.landscape {
@@ -274,7 +388,6 @@ img.sun {
 
 
 /*centering vertically and horizontally*/
-
 
 
 
@@ -456,11 +569,16 @@ img.sun {
 		bottom:0px;
 	}
 
-
-
-.smallnav {
+#menu{
+	top: 0;
+	position: fixed;
 	position: relative;
 }
+
+
+#owl-example div{
+    width: 100%;
+    height: auto; }
 
 .slicknav_menu {
     display:block;
@@ -470,11 +588,51 @@ img.sun {
     top: 0;
 }
 
+
+/*@media (scroll-top: 91px) {
+.sticky {
+position: fixed;
+background-color: white;
+height:91px;
+z-index: 100;
+}
+}*/
+
 @media screen and (max-width: 40em) {
+	
+	.cloud {
+		transform:scale(0.3,0.3)
+	}
+	
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 400px;}
+	100% {margin-left: -800px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 400px;}
+	100% {margin-left: -800px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 400px;}
+	100% {margin-left: -800px;}
+}
+
+
+/*font*/
+.slideshow h3 {
+	font-size: 1.3em;
+}
+
+.slideshow p {
+	font-size: 0.8em;
+}
+
+
 	.js #menu {
 		display:none;
 	}
-	
+
 	.js .slicknav_menu {
 		display:block;
 	}
