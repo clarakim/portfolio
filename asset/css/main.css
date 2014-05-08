@@ -33,7 +33,7 @@ caption,th {
 }
 * {
 	font-family: 'Abel', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 100%;
     margin:0;
     padding:0;
@@ -156,6 +156,53 @@ section h4 {
 }
 
 
+@font-face {
+      font-family: 'icomoon';
+      src:url('../font/fonts/icomoon.eot');
+      src:url('../font/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+          url('../font/fonts/icomoon.woff') format('woff'),
+          url('../font/fonts/icomoon.ttf') format('truetype'),
+          url('../font/fonts/icomoon.svg#icomoon') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+
+	[class^="icon-"], [class*=" icon-"] {
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	.icon-mobile:before {
+		content: "\e600";
+	}
+	.icon-mail:before {
+		content: "\e601";
+	}
+	.icon-facebook:before {
+		content: "\e602";
+	}
+	.icon-github:before {
+		content: "\e603";
+	}
+	.icon-html5:before {
+		content: "\e604";
+	}
+	.icon-css3:before {
+		content: "\e605";
+	}
+	.icon-arrow-down:before {
+		content: "\e606";
+	}
 
 
 h1{
@@ -202,6 +249,17 @@ p{
 	font-size: 0.9em;
 }
 
+/*icomoon*/
+
+.icons {
+	font-size: 3.5em;
+}
+
+.icons2{
+	margin-top: 10px;
+	font-size: 2.5em;
+}
+
 
 /*header*/
 
@@ -230,6 +288,7 @@ p{
 }
 
 ul.menu {
+		font-family: 'Abel', sans-serif;
 		position: fixed;
 		top:0;
 		left:0;
@@ -374,7 +433,11 @@ ul.menu .rightmenu a:focus{
 }
 
 #jsicon {
-	width: 80px;
+	width: 57px;
+}
+
+.iconbox {
+	margin-top: 40px;
 }
 
 
