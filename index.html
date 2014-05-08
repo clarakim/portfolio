@@ -18,20 +18,18 @@
 
 	<!--google-font-->
 	
-	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>	
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
  
   <link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
+
 
 
 	
 	<!--font awesome-->
-	<link rel="stylesheet" href="asset/css/">
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 	<!--foundation-->
@@ -47,9 +45,6 @@
 
 	<!-- bxSlider CSS file -->
 	<link href="asset/css/jquery.bxslider.css" rel="stylesheet" />
-
-
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -82,17 +77,18 @@
 <!--header navbar-->
 	
 
-			
-		<ul class="menu hide-for-small">
-			<div class="row">
-				<div class="large-12 columns">				
-				<li class="left"><a href="#landing"><img class="navlogo" src="asset/imgs/logo.png"></a></li>
-				<li class="rightmenu"><a href="#about">ABOUT</a></li>				
-				<li class="rightmenu"><a href="#work">WORK</a></li>
-				<li class="rightmenu"><a href="#contact">CONTACT</a></li>				
+		<nav>
+			<ul class="menu hide-for-small">
+				<div class="row">
+					<div class="large-12 columns">				
+					<li class="left"><a href="#landing"><img class="navlogo" src="asset/imgs/logo.png"></a></li>
+					<li class="rightmenu"><a href="#about">ABOUT</a></li>				
+					<li class="rightmenu"><a href="#work">WORK</a></li>
+					<li class="rightmenu"><a href="#contact">CONTACT</a></li>				
+					</div>
 				</div>
-			</div>
-		</ul>
+			</ul>
+	</nav>
 
 		<div class="smallnav show-for-small hide-for-medium-up">
 		<div id="logo"><a href="#landing"><img class="navlogo small" src="asset/imgs/logo.png"></a></div>
@@ -108,7 +104,7 @@
 
 	<div class="contents">
 		<div class="row">
-		<section id="landing" height="100vh">
+		<section id="landing" height="100vh" class="group">
 			
 				<div class="wrap center">
 					<h1>Hello, this is Clara</h1>
@@ -118,13 +114,6 @@
 			
 		</section>
 		</div>
-	
-
-
-
-
-
-
 	
 		<section id="about">
 			<div class="row">
@@ -136,8 +125,7 @@
 						<p>
 							Hello there! My name Clara and I want to be a front-end designer/developer.
 							I have a degree in Architecture so I have a design background. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident.
+							cillum dolore eu fugiat nulla pariatur. 
 						</p>
 					</li>
 					<li class="text">
@@ -165,16 +153,12 @@
 			</div>	
 			</div>
 		</section>
-	
-			
-	
+		
 		<section id="work" class="group">
 			<div class="row">
 			<div class="grid wrap2">
 			<h1>Work</h1>
-			
-
-
+		
 			  <div class="large-12 columns">
 			    <div id="grid-gallery" class="grid-gallery">
 				<section class="grid-wrap">
@@ -252,13 +236,10 @@
 								<figcaption><h3>Portfolio</h3></figcaption>
 							</div>
 							</figure>
-						</li>
-
-					
-						
-						
+						</li>						
 					</ul>
 				</section><!-- // grid-wrap -->
+
 				<section class="slideshow">
 					<ul>
 						<li>
@@ -418,7 +399,7 @@
 	                    <textarea rows="8" name="message" id="message" class="form-control required" role="textbox" aria-required="true"></textarea>
 	                  </div>
 
-	                  <div class="actions">
+	                  <div class="actions">                	
 	                    <input type="submit" value="Send Your Message" name="submit" id="submitButton" class="btn btn-primary" title="Click here to submit your message!" />
 	                  <!--  <input type="reset" value="Clear Form" class="btn btn-danger" title="Remove all the data from the form." />   -->
 	                  </div>
@@ -427,9 +408,8 @@
               </form>
               <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
 							<a href="#"><i class="fa fa-github fa-3x"></i></a>
-        	</div>
-      	</div>
-
+        		</div>
+      		</div>
 				</div>
 		</section>
 	
@@ -449,31 +429,30 @@
 			$('#menu').slicknav({label:"",'closeOnClick': true});
 		});
 	</script>
-	
-	<!-- bxSlider Javascript file -->
-	<script src="asset/js/jquery.bxslider.min.js"></script>
-	<script>$(function(){
-  $('.bxslider').bxSlider();
-});</script>
-
-
 
 	<script src="asset/js/slidr.min.js"></script>
 	<script>
-	$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+		$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	</script>
+
+
+	<script>
+		$(function() {
+	  $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+	});
 	</script>
 
 	</body>

@@ -45,13 +45,9 @@ q:before,q:after {
 abbr,acronym { border: 0;
 }
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+textarea {
+    resize: vertical;
 }
-
 
 
 /* Custom CSS
@@ -84,10 +80,9 @@ body{
 }
 
 section{
-	padding-top: 20px;
-	padding-bottom: 30px;
+	padding-top: 50px;
+	padding-bottom: 80px;
 }
-
 
 .container .fullpage {
 	margin-top: 150px;
@@ -101,17 +96,14 @@ section{
 .wrap{
 	padding-top: 0px;
 	display: table-cell;
-	padding-left:20px;
-	padding-right: 20px;
-  vertical-align: middle;    
+   vertical-align: middle;    
 }
 
-ul.menu {padding-bottom:15px;}
 
 .wrap2 {
 	margin-top: 100px;
-	padding-top: 100px;
-	padding: 3%;
+	padding-top: 220px;
+	padding: 2%;
 }
 
 /*spaces between texts*/
@@ -155,6 +147,16 @@ section h4 {
 	padding-right:10px; 
 }
 
+#landing h1 {
+	padding-bottom:5px;
+}
+
+#landing h2 {
+	padding-top: 5px;
+}
+
+
+
 
 h1{
 
@@ -166,9 +168,10 @@ h1{
 	
 }
 
+/*
 #work h1 {
 	color:#444;
-} 
+} */
 
 h2, h4{
 	font-family: 'Abel', sans-serif;
@@ -233,22 +236,23 @@ ul.menu {
 		right:0;
     list-style:none;
     margin:0; 
-    margin-bottom: 18px;
+    margin-bottom: 0px;
     text-align:right;
     z-index: 100;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,1);
 
 }
 
 ul.menu .rightmenu {
 	display: inline;
 	padding-top: 27px;
-	padding-bottom:25px;
+	
 }
 
-ul.menu li a {
+ul.menu li a:link {
 	display:inline-block;
 	padding-top: 30px;
+	padding-bottom:25px;
   padding-left:8px;
   padding-right:6px;
   font-family: 'Abel', sans-serif;
@@ -262,29 +266,24 @@ ul.menu li a {
   transition:.5s;
 }
 
-ul.menu .rightmenu:hover {
-	background-color: lightblue;
 
-}
-
-ul.menu .rightmenu:hover a{
-	color:#fff;
-	}
-
-
-#landing {
-	margin-top: 150px;
-}
-
-ul.menu .rightmenu a:active {
-	color:black;
-}
-
-ul.menu a {
+ul.menu a:link {
 	color:grey;
 }
 
+ul.menu .rightmenu:hover a{
+	background-color: lightblue;
+	color:#fff;
 
+}
+
+
+
+
+ul.menu .rightmenu a:focus{
+	background-color: lightblue;
+	color:#fff;
+	}
 
 
 
@@ -306,14 +305,17 @@ ul.menu a {
 }
 
 
+#landing {
+	margin-top: 100px;
+}
 
 
 #landing {
 	width: 100%;
-	min-height:100vh;
+	height:100vh;
 	position:relative;
 	background: rgba(0,0,0,0);
-	margin: auto;
+	margin: 0 auto;
 	display: table;
 }
 
@@ -322,15 +324,16 @@ ul.menu a {
 }
 
 #work {
-	padding-top: 80px;
+	padding-top: 130px;
 	position: relative;
 	background-color: rgba(255,255,255,0);
 }
 
 #contact {
+	min-width:100%;
 	min-height: 100vh;
 	position: relative;
-	background-color: grey;
+	
 }
 
 /*contents divs ends*/
@@ -622,52 +625,225 @@ z-index: 100;
 }
 }*/
 
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+
+
 @media screen and (max-width: 40em) {
 	
 	.cloud {
 		transform:scale(0.3,0.3)
 	}
-
 	
-h1{
-	font-size: 1.8em;
-}
 
-h2 {
-	font-size: 1em;
-}
-
-
-
-@-webkit-keyframes moveclouds {
-	0% {margin-left: 400px;}
-	100% {margin-left: -800px;}
-}
-@-moz-keyframes moveclouds {
-	0% {margin-left: 400px;}
-	100% {margin-left: -800px;}
-}
-@-o-keyframes moveclouds {
-	0% {margin-left: 400px;}
-	100% {margin-left: -800px;}
-}
+	@-webkit-keyframes moveclouds {
+		0% {margin-left: 400px;}
+		100% {margin-left: -800px;}
+	}
+	@-moz-keyframes moveclouds {
+		0% {margin-left: 400px;}
+		100% {margin-left: -800px;}
+	}
+	@-o-keyframes moveclouds {
+		0% {margin-left: 400px;}
+		100% {margin-left: -800px;}
+	}
 
 
-/*font*/
-.slideshow h3 {
-	font-size: 1.3em;
+	.wrap2 {
+		margin-top: 45px;
+	}
+
+	.text {
+	
+	padding: 25px 10px 25px 10px; 
 }
 
-.slideshow p {
-	font-size: 0.8em;
-}
+
+	/*font*/
+
+
+	h1{
+		font-size:1.8em ;
+	}
+
+	h2,h4 {
+		font-size:1em ;
+	}
+
+	p{
+		font-size:1.1em;
+	}
+	
+
+	.slideshow h3 {
+		font-size: 1.3em;
+	}
+
+	.slideshow p {
+		font-size: 0.8em;
+	}
 
 
 	.js #menu {
-		display:none;
+			display:none;
 	}
 
 	.js .slicknav_menu {
 		display:block;
 	}
+	
+
+	#work {
+	padding-top: 80px;
+}
+
+
+
 }
