@@ -1174,6 +1174,7 @@ blockquote p {
   a:visited {
     text-decoration: underline; }
 
+
   a[href]:after {
     content: " (" attr(href) ")"; }
 
@@ -1184,7 +1185,6 @@ blockquote p {
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: ""; }
-
   pre,
   blockquote {
     border: 1px solid #999999;
